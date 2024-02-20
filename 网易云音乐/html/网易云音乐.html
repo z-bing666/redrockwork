@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .top {
+            height: 70px;
+            background-color: #242424;
+            box-sizing: border-box;
+            border-bottom: lpx solid #000;
+
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            height: 69px;
+            line-height: 69px;
+        }
+
+        .topbar .bar-left {
+            display: flex;
+        }
+
+        .topbar .bar-left .logo {
+            background-image: url(C:\Users\LENOVO\Desktop\前端考核\网易云音乐\image.png);
+        }
+
+        .topbar .bar-left .logo a {
+            display: block;
+            width: 157px;
+            padding-right: 20px;
+            text-indent: -9999px;
+        }
+
+        .topbar .bar-left .list {
+            display: flex;
+        }
+
+        .topbar .bar-left .list .item {
+            position: relative;
+            display: block;
+            padding: 0 20px;
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .topbar .bar-left .list .item:hover,
+        .topbar .bar-left .list .item.active {
+            color: #fff;
+            background-color: #000;
+        }
+
+        .topbar .bar-left .list .item.active::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 7px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: url(C:\Users\LENOVO\Desktop\前端考核\网易云音乐\image.png) -226px 0;
+        }
+
+        .topbar .bar-left .list .item.icon-hot {
+            position: absolute;
+            width: 28px;
+            height: 19px;
+            top: 10px;
+            right: -15px;
+            background: url(C:\Users\LENOVO\Desktop\前端考核\网易云音乐\image.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="topbar wrapper_01">
+            <div class="bar-left">
+                <h1 class="logo">
+                </h1>
+                <ul class="list">
+                    <li><a href="#" class="item active">发现音乐</a></li>
+                    <li><a href="#" class="item">我的音乐</a></li>
+                    <li><a href="#" class="item">关注</a></li>
+                    <li><a href="#" class="item">商城</a></li>
+                    <li><a href="#" class="item">音乐人</a></li>
+                    <li><a href="#" class="item">下载客户端</a></li>
+                </ul>
+            </div>
+            <div class="bar-right">
+
+            </div>
+        </div>
+        <div class="topnav"></div>
+    </div>
+</body>
+
+</html>
